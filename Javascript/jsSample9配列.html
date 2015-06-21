@@ -5,21 +5,33 @@
 </head>
 <body>
 	<script>
-		var yobi = new Array();
+		var yobi1 = new Array();
 
-		yobi[0] = "日曜日";
-		yobi[1] = "月曜日";
-		yobi[2] = "火曜日";
-		yobi[3] = "水曜日";
-		yobi[4] = "木曜日";
-		yobi[5] = "金曜日";
-		yobi[6] = "土曜日";
+		yobi1[0] = "日曜日";
+		yobi1[1] = "月曜日";
+		yobi1[2] = "火曜日";
+		yobi1[3] = "水曜日";
+		yobi1[4] = "木曜日";
+		yobi1[5] = "金曜日";
+		yobi1[6] = "土曜日";
 
 		var today = new Date();
 		var week = today.getDay();
 
-		document.write("今日は" + yobi[week] + "です！");
-	</script>
+		document.write("今日は" + yobi1[week] + "です！");
 
+		var yobi2 = new Array("日曜日", "月曜日" , "火曜日", "水曜日", "木曜日", "金曜日", "土曜日");
+		document.write("今日は" + yobi2[week] + "です！");
+
+		var yobi3 = new Array(
+			"日曜日",
+			"月曜日",
+			"火曜日",
+			"水曜日",
+			"木曜日",
+			"金曜日",
+			"土曜日");
+		document.write("今日は" + yobi3[week] + "です！");
+	</script>
 </body>
 </html>
