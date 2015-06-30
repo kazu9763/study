@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script>
+	// 問題を配列に入れる
+	var q = new Array(
+		"水を電気分解すると水素と酸素が出る",
+		"地球上で最も多い元素は炭素である",
+		"金の元素記号はGdである",
+		"血液は骨の内部で作られる",
+		"動物細胞に細胞壁はない"
+		);
+
+	// 答えを配列に入れる
+	var ans = new Array(true, false, false, true, true);
+
+	function quiz() {
+		var ten = 0;	// 点数を入れる変数
+
+		for(var i = 0; i <= 4; i++){
+			if(confirm(q[i]) == ans[i]) ten = ten + 20;
+		}
+		alert("あなたは" + ten + "点でした！");
+	}
+
+</script>
+</head>
+<body>
+<script>
+	var flg;
+	flg = confirm("背景の色を変えてもいいですか？");
+	if(flg == true) document.bgColor = "green";
+
+	quiz();
+</script>
+
+</body>
+</html>
