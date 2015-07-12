@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function modoru() {
+			history.back();
+		}
+		function susumu() {
+			history.forward();
+		}
+		function koshin() {
+			location.reload();
+		}
+		function rireki(num) {
+			history.go(num);
+		}
+	</script>
+</head>
+<body>
+	<form>
+	<input type="button" value="戻る" onclick="modoru()">
+	<input type="button" value="進む" onclick="susumu()">
+	<input type="button" value="更新" onclick="koshin()">
+	<input type="button" value="2つ戻る" onclick="rireki(-2)">
+	<input type="button" value="3つ進む" onclick="rireki(3)">
+	</form>
+</body>
+</html>

