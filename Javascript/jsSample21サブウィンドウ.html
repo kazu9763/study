@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function winOpen(jpURL) {
+			window.open(jpURL,"sub");
+		}
+		function subwin(jpURL) {
+			window.open(jpURL,"","width=640,height=480,top=100,left=100");
+		}
+		function subWinOpt(option) {
+			window.open("jsSample21サブウィンドウ.html","sub","width=640,height=480,top=0,left=0" + "," + option);
+		}
+		function winCenter() {
+			var w = (screen.width - 640) / 2;
+			var h = (screen.height - 480) / 2;
+			window.open("jsSample21サブウィンドウ.html","","width = 640,height=480"+
+				",left=" + w + ",top=" + h);
+		}
+
+	</script>
+</head>
+<body>
+	<form>
+		<input type="button" value="別窓" onclick='winOpen("jsSample21サブウィンドウ.html")'><br>
+		<input type="button" value="別窓" onclick='subwin("jsSample21サブウィンドウ.html")'><br>
+		<input type="button" value="スクロールON" onclick='subWinOpt("scrollbars=yes")'><br>
+		<input type="button" value="スクロールOFF" onclick='subWinOpt("scrollbars=no")'><br>
+		<input type="button" value="スクロールOFF" onclick='subWinOpt("scrollbars=no, toolbar=no, menubar=no,"+
+			",status=no,directories=no, resizable=no")'><br>
+		<input type="button" value="中央表示" onclick="winCenter()"><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</form>
+</body>
+</html>
