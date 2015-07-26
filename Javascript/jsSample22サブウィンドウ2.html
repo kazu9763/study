@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+	function move1(yoko,tate) {
+		moveBy(yoko,tate);
+	}
+	function move2(yoko,tate) {
+		moveTo(yoko,tate);
+	}
+	function reSize1(yoko,tate) {
+		resizeBy(yoko,tate);
+	}
+	function reSize2(yoko,tate) {
+		resizeTo(yoko,tate);
+	}
+	</script>
+</head>
+<body>
+	<input type="button" value="右へ" onclick="move1(10,0)"><br>
+	<input type="button" value="左へ" onclick="move1(-10,0)"><br>
+	<input type="button" value="上へ" onclick="move1(0,-10)"><br>
+	<input type="button" value="下へ" onclick="move1(0,10)"><br>
+	<input type="button" value="元の位置" onclick="move2(100,50)"><br>
+	<a href="javascript:reSize1(10,0)">横伸</a><br>
+	<a href="javascript:reSize1(0,10)">縦伸</a><br>
+	<a href="javascript:reSize1(-10,0)">横縮</a><br>
+	<a href="javascript:reSize1(0,-10)">縦縮</a><br>
+	<a href="javascript:reSize2(320,240)">指定サイズ</a><br>
+
+	<script>
+		// var num = window.opener.document.sample.suji.value;
+		// var str = window.opener.document.sample.moji.value;
+
+		document.write(window.opener.document.sample.suji.value);
+
+		// document.write(num + "どきゅめんと<br>");
+		// document.write(str + "---<br>");
+		document.write("dokyumento3");
+	</script>
+
+</body>
+</html>

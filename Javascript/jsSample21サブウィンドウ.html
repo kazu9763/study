@@ -18,19 +18,29 @@
 			window.open("jsSample21サブウィンドウ.html","","width = 640,height=480"+
 				",left=" + w + ",top=" + h);
 		}
-
+		function winOpen2() {
+			window.open("jsSample21サブウィンドウ.html","subwin","width=320,height=240,left=100,top=50");
+		}
+		function winOpen3() {
+			window.open("jsSample22サブウィンドウ2.html","subwin","width=320,height=240,left=100,top=50");
+		}
 	</script>
 </head>
 <body>
-	<form>
+	<form name="sample">
 		<input type="button" value="別窓" onclick='winOpen("jsSample21サブウィンドウ.html")'><br>
 		<input type="button" value="別窓" onclick='subwin("jsSample21サブウィンドウ.html")'><br>
 		<input type="button" value="スクロールON" onclick='subWinOpt("scrollbars=yes")'><br>
 		<input type="button" value="スクロールOFF" onclick='subWinOpt("scrollbars=no")'><br>
-		<input type="button" value="スクロールOFF" onclick='subWinOpt("scrollbars=no, toolbar=no, menubar=no,"+
+		<input type="button" value="スクロールOFF2" onclick='subWinOpt("scrollbars=no, toolbar=no, menubar=no,"+
 			",status=no,directories=no, resizable=no")'><br>
 		<input type="button" value="中央表示" onclick="winCenter()"><br>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<input type="button" value="サブウィンドウ2" onclick="winOpen3()"><br>
+		<br>
+		<input type="button" value="サンプル" onclick="WinOpen()">
+		<input type="hidden" name="suji" value="12345">
+		<input type="hidden" name="moji" value="あいうえお">
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</form>
 </body>
 </html>
