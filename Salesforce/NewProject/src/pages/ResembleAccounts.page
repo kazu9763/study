@@ -1,0 +1,9 @@
+<apex:page controller="ResembleAccountsController" showHeader="true" sidebar="true">
+	Hello!
+	<apex:pageBlock title="取引先">
+		<apex:pageBlockTable value="{!AllAccountList}" var="item">
+			<apex:column value="{!item.Name}"/>
+			<apex:column value="{!item.Id}"/>
+		</apex:pageBlockTable>
+	</apex:pageBlock>
+</apex:page>
